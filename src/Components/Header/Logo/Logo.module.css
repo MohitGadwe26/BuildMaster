@@ -1,0 +1,77 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.logoIcon {
+  color: var(--secondary);
+  font-size: 2rem;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover .logoIcon {
+  transform: rotate(-15deg);
+}
+
+.logo h1 {
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.logo span {
+  color: var(--secondary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .logoIcon {
+    font-size: 1.8rem;
+  }
+
+  .logo h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    gap: 0.4rem;
+  }
+
+  .logoIcon {
+    font-size: 1.6rem;
+  }
+
+  .logo h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logoIcon {
+    font-size: 1.4rem;
+  }
+
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    gap: 0.3rem;
+  }
+
+  .logoIcon {
+    font-size: 1.2rem;
+  }
+
+  .logo h1 {
+    font-size: 1rem;
+  }
+}

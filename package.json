@@ -1,11 +1,13 @@
 {
+  "homepage": "https://MohitGadwe26.github.io/BuildMaster",
   "name": "1-todo-app-version-1",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

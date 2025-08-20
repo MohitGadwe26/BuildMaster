@@ -1,0 +1,128 @@
+.userDropdownContainer {
+  position: relative;
+  margin-left: 2rem;
+}
+
+.userProfileBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.userProfileBtn:hover {
+  background-color: #1a5276;
+}
+
+.userDropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+  width: 200px;
+  z-index: 1000;
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: #1a5276;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdownItem:hover {
+  background-color: #f5f5f5;
+  color: var(--secondary);
+}
+
+.dropdownItem svg {
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+.logoutBtn {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  border-top: 1px solid #eee;
+  color: #e74c3c;
+}
+
+.logoutBtn:hover {
+  color: #c0392b;
+}
+
+.logoutBtn svg {
+  color: #e74c3c;
+}
+
+.spinner {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid var(--light);
+  border-radius: 50%;
+  border-top-color: var(--accent);
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 0.5rem;
+}
+
+.userName {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .userDropdownContainer {
+    margin-left: 0;
+    margin-right: 1rem;
+    width: auto;
+  }
+
+  .userProfileBtn {
+    width: auto;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    justify-content: center;
+  }
+
+  .userDropdown {
+    position: absolute;
+    width: 200px;
+  }
+
+  .userName {
+    max-width: 120px;
+  }
+}

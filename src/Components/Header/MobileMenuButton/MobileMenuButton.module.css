@@ -1,0 +1,49 @@
+.mobileMenuBtn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+  position: relative;
+}
+
+.mobileMenuBtn span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--primary);
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.active {
+  /* This class will be applied to the button when mobile menu is open */
+}
+
+/* Active state styles */
+.mobileMenuBtn.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobileMenuBtn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobileMenuBtn.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Show only on mobile */
+@media (max-width: 992px) {
+  .mobileMenuBtn {
+    display: block;
+  }
+}
+
+/* Hide on desktop */
+@media (min-width: 993px) {
+  .mobileMenuBtn {
+    display: none;
+  }
+}
