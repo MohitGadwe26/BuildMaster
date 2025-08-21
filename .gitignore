@@ -32,6 +32,6 @@ dist-ssr
 .env.production.local
 
 # lockfiles (optional, if you don’t want to commit them)
-# package-lock.json
-# yarn.lock
-# pnpm-lock.yaml
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
