@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import { GiHammerNails } from "react-icons/gi";
 import styles from "./Logo.module.css";
 
@@ -11,6 +11,10 @@ const Logo = ({ navigate }) => {
       </h1>
     </div>
   );
+};
+
+Logo.propTypes = {
+  navigate: PropTypes.func.isRequired,
 };
 
 export default Logo;

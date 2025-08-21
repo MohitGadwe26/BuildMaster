@@ -1,10 +1,9 @@
-import React from "react";
+import PropTypes from "prop-types";
 import styles from "./MobileMenuButton.module.css";
 
-// In MobileMenuButton.jsx - add console log to verify clicks
 const MobileMenuButton = ({ mobileMenuOpen, setMobileMenuOpen }) => {
   const handleClick = () => {
-    console.log("Menu button clicked"); // Debugging
+    console.log("Menu button clicked");
     setMobileMenuOpen((open) => !open);
   };
 
@@ -21,6 +20,11 @@ const MobileMenuButton = ({ mobileMenuOpen, setMobileMenuOpen }) => {
       <span></span>
     </button>
   );
+};
+
+MobileMenuButton.propTypes = {
+  mobileMenuOpen: PropTypes.bool.isRequired,
+  setMobileMenuOpen: PropTypes.func.isRequired,
 };
 
 export default MobileMenuButton;

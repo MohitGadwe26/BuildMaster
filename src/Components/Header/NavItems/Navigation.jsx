@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import PropTypes from "prop-types";
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import MobileMenuButton from "../MobileMenuButton/MobileMenuButton";
 import AuthButtons from "../AuthButtons/AuthButtons";
@@ -12,7 +13,7 @@ const Navigation = ({
   user,
   setSidebarContent,
   navigate,
-  onLogout, // Add this to the destructured props
+  onLogout,
 }) => {
   const location = useLocation();
   const navItems = [
@@ -65,7 +66,7 @@ const Navigation = ({
 
   return (
     <>
-      {/* Mobile auth buttons - always shown on mobile */}
+      {/* Mobile auth buttons */}
       <div className={styles.mobileAuthContainer}>
         {isLoggedIn ? (
           <UserDropdown
@@ -108,7 +109,7 @@ const Navigation = ({
           ))}
         </ul>
 
-        {/* Desktop auth buttons - hidden on mobile via CSS */}
+        {/* Desktop auth buttons */}
         <div className={styles.desktopAuthContainer}>
           {isLoggedIn ? (
             <UserDropdown
@@ -128,6 +129,16 @@ const Navigation = ({
       </nav>
     </>
   );
+};
+
+Navigation.propTypes = {
+  mobileMenuOpen: PropTypes.bool.isRequired,
+  setMobileMenuOpen: PropTypes.func.isRequired,
+  isLoggedIn: PropTypes.bool.isRequired,
+  user: PropTypes.object,
+  setSidebarContent: PropTypes.func.isRequired,
+  navigate: PropTypes.func.isRequired,
+  onLogout: PropTypes.func.isRequired,
 };
 
 export default Navigation;

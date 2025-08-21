@@ -1,5 +1,5 @@
-import React from "react";
 import { FaUser, FaUserPlus } from "react-icons/fa";
+import PropTypes from "prop-types";
 import styles from "./AuthButtons.module.css";
 
 const AuthButtons = ({ navigate, setMobileMenuOpen, mobileVersion }) => {
@@ -31,6 +31,13 @@ const AuthButtons = ({ navigate, setMobileMenuOpen, mobileVersion }) => {
       )}
     </div>
   );
+};
+
+// ✅ PropTypes validation
+AuthButtons.propTypes = {
+  navigate: PropTypes.func.isRequired,
+  setMobileMenuOpen: PropTypes.func.isRequired,
+  mobileVersion: PropTypes.bool,
 };
 
 export default AuthButtons;

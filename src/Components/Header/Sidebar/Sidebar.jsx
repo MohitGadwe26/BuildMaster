@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+import PropTypes from "prop-types";
+import { useRef } from "react";
 import { FaTimes } from "react-icons/fa";
 import Profile from "../../../pages/Profile";
 import Settings from "../../../pages/Settings";
@@ -21,6 +22,11 @@ const Sidebar = ({ sidebarContent, setSidebarContent }) => {
       </div>
     </div>
   );
+};
+
+Sidebar.propTypes = {
+  sidebarContent: PropTypes.string, // profile | settings | null
+  setSidebarContent: PropTypes.func.isRequired,
 };
 
 export default Sidebar;

@@ -1,4 +1,5 @@
-import React, { useState, useRef, useEffect } from "react";
+import PropTypes from "prop-types";
+import { useState, useRef, useEffect } from "react";
 import {
   FaUser,
   FaChevronDown,
@@ -16,8 +17,6 @@ const UserDropdown = ({
   setMobileMenuOpen,
   onLogout,
 }) => {
-  // ... existing code ...
-
   const [userDropdownOpen, setUserDropdownOpen] = useState(false);
   const [isLoggingOut, setIsLoggingOut] = useState(false);
   const dropdownRef = useRef(null);
@@ -40,16 +39,17 @@ const UserDropdown = ({
     setIsLoggingOut(true);
     setUserDropdownOpen(false);
     localStorage.removeItem("userToken");
-    setMobileMenuOpen(false); // Ensure mobile menu closes
+    setMobileMenuOpen(false);
 
     try {
       await authService.logout();
       toast.success("Logged out successfully.");
       if (typeof onLogout === "function") {
-        onLogout(); // This should trigger parent state update
+        onLogout();
       }
-      navigate("/", { replace: true }); // Use replace to prevent history entry
+      navigate("/", { replace: true });
     } catch (err) {
+      console.error(err); // log it for debugging
       toast.warn("Logout request failed, but you are logged out locally.");
       if (typeof onLogout === "function") {
         onLogout();
@@ -59,6 +59,7 @@ const UserDropdown = ({
       setIsLoggingOut(false);
     }
   };
+
   return (
     <div className={styles.userDropdownContainer} ref={dropdownRef}>
       <button
@@ -112,6 +113,15 @@ const UserDropdown = ({
       )}
     </div>
   );
+};
+
+UserDropdown.propTypes = {
+  user: PropTypes.shape({
+    name: PropTypes.string,
+  }),
+  setSidebarContent: PropTypes.func.isRequired,
+  setMobileMenuOpen: PropTypes.func.isRequired,
+  onLogout: PropTypes.func,
 };
 
 export default UserDropdown;
