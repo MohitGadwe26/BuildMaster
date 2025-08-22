@@ -1,0 +1,152 @@
+/* Base Styles */
+.homeSection {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 1200px;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+/* Background Container */
+.backgroundContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.backgroundSlide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  -webkit-backface-visibility: hidden;
+}
+
+.backgroundSlide.active {
+  opacity: 1;
+}
+
+/* Content Wrapper */
+.contentWrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  z-index: 2;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homeContent {
+  max-width: 800px;
+  padding: 0 0px;
+  color: #333;
+  text-align: left; /* changed from left */
+  margin: 0 20px;
+  /* center horizontally */
+}
+
+.heroTitle {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: #222;
+  font-weight: 700;
+  /* text-align: left;  */
+  /* force center */
+}
+
+.motto {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  color: #444;
+  text-align: left;
+  /* force center */
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start; /* center buttons */
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btnPrimary {
+  background-color: #ff7f00;
+  color: white;
+  border: 2px solid #ff7f00;
+}
+
+.btnPrimary:hover {
+  background-color: #e67300;
+  border-color: #e67300;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 127, 0, 0.3);
+}
+
+.btnSecondary {
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #333;
+}
+
+.btnSecondary:hover {
+  background-color: rgba(51, 51, 51, 0.05);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Slide Indicators */
+.slideIndicators {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  z-index: 3;
+}
+
+.indicator {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background-color: #ff7f00;
+  border-color: #ff7f00;
+  transform: scale(1.3);
+}

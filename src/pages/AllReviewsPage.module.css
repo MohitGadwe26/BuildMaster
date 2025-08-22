@@ -1,0 +1,71 @@
+.allReviews {
+  padding: 5rem 2rem;
+  min-height: 80vh;
+}
+
+.heading {
+  font-size: 36px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #333;
+  position: relative;
+}
+
+.reviewsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 3rem auto 0;
+}
+
+.reviewCard {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.reviewCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  border-left-color: #ff7f00;
+}
+
+.noReviews {
+  text-align: center;
+  padding: 3rem;
+  background: #fff;
+  border-radius: 0.8rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.noReviews p {
+  font-size: 1.6rem;
+  color: #666;
+}
+
+.star {
+  color: #ddd;
+  font-size: 1.2rem;
+}
+
+.star.filled {
+  color: #ff7f00;
+}
+
+@media (max-width: 768px) {
+  .reviewsGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .reviewCard {
+    padding: 2rem;
+  }
+}

@@ -46,7 +46,7 @@ const Navigation = ({
         const elementPosition = element.offsetTop;
 
         window.scrollTo({
-          top: elementPosition - headerHeight - 20,
+          top: elementPosition - headerHeight - 30,
           behavior: "smooth",
         });
       }
