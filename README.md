@@ -98,50 +98,50 @@ npm run deploy
 
 ### 🏠 Home Page
 <p align="center">
-  <img src="./screenshots/home-desktop.png" alt="Home Desktop" width="70%"/>
-  <img src="./screenshots/home-mobile.jpg" alt="Home Mobile" width="25%"/>
+ <img src="https://raw.githubusercontent.com/MohitGadwe26/BuildMaster/main/screenshots/home-desktop.png" alt="Home Desktop" width="70%"/>
+ <img src="https://raw.githubusercontent.com/MohitGadwe26/BuildMaster/main/screenshots/home-mobile.jpg" alt="Home Mobile" width="25%"/>
 </p>
 
 ### ℹ️ About Page
 <p align="center">
-  <img src="./screenshots/about-desktop.png" alt="About Desktop" width="70%"/>
-  <img src="./screenshots/about-mobile.jpg" alt="About Mobile" width="25%"/>
+ <img src="https://raw.githubusercontent.com/MohitGadwe26/BuildMaster/main/screenshots/about-desktop.png" alt="About Desktop" width="70%"/>
+ <img src="https://raw.githubusercontent.com/MohitGadwe26/BuildMaster/main/screenshots/about-mobile.jpg" alt="About Mobile" width="25%"/>
 </p>
 
 ### 🛠️ Services Page
 <p align="center">
-  <img src="./screenshots/services-desktop.png" alt="Services Desktop" width="70%"/>
-  <img src="./screenshots/services-mobile.jpg" alt="Services Mobile" width="25%"/>
+ <img src="https://raw.githubusercontent.com/MohitGadwe26/BuildMaster/main/screenshotss/services-desktop.png" alt="Services Desktop" width="70%"/>
+ <img src="https://raw.githubusercontent.com/MohitGadwe26/BuildMaster/main/screenshots/services-mobile.jpg" alt="Services Mobile" width="25%"/>
 </p>
 
 ### 🏗️ Projects Page
 <p align="center">
-  <img src="./screenshots/projects-desktop.png" alt="Projects Desktop" width="70%"/>
-  <img src="./screenshots/projects-mobile.jpg" alt="Projects Mobile" width="25%"/>
+ <img src="https://raw.githubusercontent.com/MohitGadwe26/BuildMaster/main/screenshots/projects-desktop.png" alt="Projects Desktop" width="70%"/>
+ <img src="https://raw.githubusercontent.com/MohitGadwe26/BuildMaster/main/screenshots/projects-mobile.jpg" alt="Projects Mobile" width="25%"/>
 </p>
 
 ### 💰 Pricing Page
 <p align="center">
-  <img src="./screenshots/pricing-desktop.png" alt="Pricing Desktop" width="70%"/>
-  <img src="./screenshots/pricing-mobile.jpg" alt="Pricing Mobile" width="25%"/>
+  <img src="https://raw.githubusercontent.com/MohitGadwe26/BuildMaster/main/screenshots/pricing-desktop.png" alt="Pricing Desktop" width="70%"/>
+  <img src="https://raw.githubusercontent.com/MohitGadwe26/BuildMaster/main/screenshots/pricing-mobile.jpg" alt="Pricing Mobile" width="25%"/>
 </p>
 
 ### 📞 Contact Page
 <p align="center">
-  <img src="./screenshots/contact-desktop.png" alt="Contact Desktop" width="70%"/>
-  <img src="./screenshots/contact-mobile.jpg" alt="Contact Mobile" width="25%"/>
+  <img src="https://raw.githubusercontent.com/MohitGadwe26/BuildMaster/main/screenshots/contact-desktop.png" alt="Contact Desktop" width="70%"/>
+  <img src="https://raw.githubusercontent.com/MohitGadwe26/BuildMaster/main/screenshots/contact-mobile.jpg" alt="Contact Mobile" width="25%"/>
 </p>
 
 ### 🔐 Login Page
 <p align="center">
-  <img src="./screenshots/login-desktop.png" alt="Login Desktop" width="70%"/>
-  <img src="./screenshots/login-mobile.jpg" alt="Login Mobile" width="25%"/>
+  <img src="https://raw.githubusercontent.com/MohitGadwe26/BuildMaster/main/screenshots/login-desktop.png" alt="Login Desktop" width="70%"/>
+  <img src="https://raw.githubusercontent.com/MohitGadwe26/BuildMaster/main/screenshotss/login-mobile.jpg" alt="Login Mobile" width="25%"/>
 </p>
 
 ### 📝 Signup Page
 <p align="center">
-  <img src="./screenshots/signup-desktop.png" alt="Signup Desktop" width="70%"/>
-  <img src="./screenshots/signup-mobile.jpg" alt="Signup Mobile" width="25%"/>
+  <img src="https://raw.githubusercontent.com/MohitGadwe26/BuildMaster/main/screenshots/signup-desktop.png" alt="Signup Desktop" width="70%"/>
+  <img src="https://raw.githubusercontent.com/MohitGadwe26/BuildMaster/main/screenshots/signup-mobile.jpg" alt="Signup Mobile" width="25%"/>
 </p>
 
 Copyright (c) 2025 Mohit Gadwe
