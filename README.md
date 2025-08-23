@@ -159,8 +159,8 @@ All Rights Reserved.
 
 👨‍💻 Author
 Mohit Gadwe
-📧 Email: your.email@example.com
-💼 LinkedIn: https://linkedin.com/in/mohitgadwe26
-🌐 Portfolio: https://mohitgadwe26.github.io
+📧 Email: smohitg26@gmail.com
+💼 LinkedIn: https://www.linkedin.com/in/mohit-gadwe/
+🌐 Portfolio: https://mohitgadwe26.github.io/BuildMaster/
 
 ```
