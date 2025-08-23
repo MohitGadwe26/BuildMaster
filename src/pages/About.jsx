@@ -8,7 +8,7 @@ const About = () => {
 
       <div className={styles.row}>
         <div className={styles.video}>
-          <video src={aboutVideo} loop muted autoPlay />
+          <video src={aboutVideo} loop muted autoPlay playsInline />
         </div>
 
         <div className={styles.content}>

@@ -120,31 +120,21 @@
   font-weight: 500;
 }
 
-/* Responsive adjustments */
+/* Tablet adjustments */
 @media (max-width: 992px) {
-  .box {
-    flex: 1 1 45%;
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .heading {
-    text-align: center; /* Center align heading */
-  }
-
-  .heading::after {
-    left: 50%; /* Center the underline */
-    transform: translateX(-50%);
+  .about {
+    padding: 40px 5%;
   }
 
   .row {
     flex-direction: column;
+    gap: 30px;
   }
 
   .video,
   .content {
     flex: 1 1 100%;
+    width: 100%;
   }
 
   .video {
@@ -153,15 +143,92 @@
 
   .content {
     order: 2;
-    text-align: center; /* ✅ center content in mobile */
+    text-align: center;
+    padding: 0 10%;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .heading::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .box {
+    flex: 1 1 45%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .about {
+    padding: 30px 5%;
+  }
+
+  .row {
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .content {
+    padding: 0 5%;
+  }
+
+  .content h3 {
+    font-size: 24px;
+  }
+
+  .content p {
+    font-size: 15px;
   }
 
   .btn {
-    display: inline-block;
-    margin: 0 auto; /* ✅ center button horizontally */
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  .boxContainer {
+    gap: 15px;
   }
 
   .box {
     flex: 1 1 100%;
+    padding: 20px 15px;
+  }
+
+  .box h3 {
+    font-size: 28px;
+  }
+
+  .box p {
+    font-size: 15px;
+  }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+  .about {
+    padding: 25px 5%;
+  }
+
+  .heading {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  .content h3 {
+    font-size: 22px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
   }
 }

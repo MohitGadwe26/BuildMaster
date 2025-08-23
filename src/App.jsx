@@ -12,7 +12,7 @@ import Services from "./pages/Services";
 import Projects from "./pages/Projects";
 import Pricing from "./pages/Pricing";
 import Reviews from "./pages/Reviews";
-import Contact from "./pages/Contact";
+import ContactOptions from "./pages/ContactOptions";
 import AllReviewsPage from "./pages/AllReviewsPage";
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
               <Projects />
               <Pricing />
               <Reviews />
-              <Contact />
+              <ContactOptions />
             </main>
           }
         />
